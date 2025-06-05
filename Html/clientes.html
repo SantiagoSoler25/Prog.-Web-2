@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Clientes - Entidad Bancaria</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../materialize/css/materialize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/clientes.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body class="grey lighten-4">
+    <nav class="header_nav">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">Entidad Bancaria</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="../index.html" target="_top">Inicio</a></li>
+                <li><a href="./clientes.html" target="_self">Clientes</a></li>
+                <li><a href="#">Transacciones</a></li>
+                <li><a href="#">Portafolio</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">Registrar Nuevo Cliente</span>
+                <form id="clienteForm">
+                    <div class="input-field">
+                        <input id="nombre" type="text" required>
+                        <label for="nombre">Nombre Completo</label>
+                    </div>
+                    <div class="input-field">
+                        <input id="cedula" type="text" required pattern="[0-9]{6,12}">
+                        <label for="cedula">Cédula</label>
+                    </div>
+                    <div class="input-field">
+                        <input id="email" type="email" required>
+                        <label for="email">Correo Electrónico</label>
+                    </div>
+                    <div class="input-field">
+                        <input id="telefono" type="tel" required pattern="[0-9]{7,10}">
+                        <label for="telefono">Teléfono</label>
+                    </div>
+                    <button class="btn waves-effect waves-light" type="submit">Registrar</button>
+                </form>
+                <div class="center-links">
+                    <a href="../index.html" target="_top">Volver al inicio</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="center-align">
+                © 2025 Entidad Bancaria. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+    <script src="../Js/jquery-3.7.1.min.js"></script>
+    <script src="../materialize/js/materialize.min.js"></script>
+    <script src="../Js/clientes.js"></script>
+</body>
+</html>
