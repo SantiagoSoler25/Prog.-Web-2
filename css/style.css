@@ -1,0 +1,109 @@
+/* Fondo general */
+body {
+  background: linear-gradient(135deg, #e3eafc 0%, #c1d3fe 100%);
+  min-height: 100vh;
+}
+
+/* Navbar */
+.nav-wrapper {
+  background: linear-gradient(120deg, #1a237e 60%, #3949ab 100%) !important;
+}
+.nav-wrapper, .nav-wrapper a, .brand-logo, #nav-mobile li a {
+  font-style: italic;
+}
+.brand-logo {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Título principal */
+h2.center-align {
+  color: #111 !important;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 1px 2px 8px #b0c4de50;
+}
+
+/* Tarjetas bancarias */
+.card {
+  border-radius: 18px;
+  box-shadow: 0 6px 24px 0 rgba(0, 51, 102, 0.12);
+  border: 1px solid #e0e7ef;
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 32px 0 rgba(0, 51, 102, 0.18);
+}
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.card.blue-grey.darken-1,
+.card.teal.darken-1,
+.card.green.darken-1,
+.card.red.darken-1 {
+  /* Todos los cajones: azul profundo profesional */
+  background: linear-gradient(120deg, #1a237e 60%, #3949ab 100%);
+}
+.card.red.darken-1 {
+  /* Problemas: azul oscuro profesional distinto */
+  background: linear-gradient(120deg, #102542 60%, #283e6d 100%);
+}
+.card-content p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+.card-action {
+  background: #fff !important;
+  border-top: 1px solid #e0e7ef;
+}
+.card-action a {
+  color: #1a237e !important;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #fff0;
+  transition: border-color 0.2s;
+}
+.card-action a:hover {
+  border-bottom: 2px solid #1a237e;
+}
+.card.same-height {
+  min-height: 260px; /* Ajusta este valor según lo que necesites */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Footer */
+.page-footer {
+  background: linear-gradient(120deg, #1a237e 60%, #3949ab 100%) !important;
+}
+.page-footer h5,
+.page-footer span,
+.page-footer a,
+.page-footer p {
+  color: #fff !important;
+}
+.page-footer ul li a {
+  color: #b0c4de !important;
+}
+.page-footer ul li a:hover {
+  color: #fff !important;
+  text-decoration: underline;
+}
+hr {
+  border-color: #1a237e;
+}
+
+/* Responsive ajustes */
+@media (max-width: 600px) {
+  h2.center-align {
+    font-size: 2rem;
+  }
+  .card-title {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,89 @@
+body, .salud-bg {
+    background: linear-gradient(120deg, #e3f2fd 0%, #f8fafc 100%);
+    min-height: 100vh;
+}
+.card-salud {
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(40,53,147,0.13);
+    background: #fff;
+    color: #263238;
+    padding-bottom: 18px;
+}
+.card-salud .card-content {
+    padding: 48px 36px 32px 36px;
+}
+.icono-salud {
+    font-size: 4rem;
+    color: #00c6ff;
+    background: #e3f2fd;
+    border-radius: 50%;
+    padding: 20px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 12px #00c6ff33;
+}
+.salud-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #1a237e;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+.salud-desc {
+    font-size: 1.18rem;
+    margin-bottom: 22px;
+    color: #37474f;
+}
+.salud-lista {
+    margin-top: 18px;
+    font-size: 1.08rem;
+    color: #263238;
+    margin-bottom: 28px;
+}
+.salud-check {
+    color: #00c6ff;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.salud-form label {
+    color: #1a237e !important;
+}
+.salud-form input[type="text"], 
+.salud-form input[type="email"] {
+    color: #1a237e;
+    border-bottom: 1.5px solid #00c6ff;
+}
+.salud-form .input-field input:focus {
+    border-bottom: 2px solid #1a237e;
+    box-shadow: 0 1px 0 0 #1a237e;
+}
+.salud-btn {
+    background: linear-gradient(90deg, #00c6ff 0%, #1a237e 100%);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-top: 12px;
+    letter-spacing: 1px;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 2px 12px #00c6ff33;
+}
+.salud-btn:hover {
+    background: linear-gradient(90deg, #1a237e 0%, #00c6ff 100%);
+    box-shadow: 0 4px 24px #1a237e33;
+}
+.mensaje-exito {
+    color: #00c6ff;
+    font-weight: bold;
+    margin-top: 22px;
+    display: none;
+    font-size: 1.15rem;
+    background: #e3f2fd;
+    border-radius: 12px;
+    padding: 12px 18px;
+    box-shadow: 0 2px 8px #00c6ff22;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .card-salud .card-content {
+        padding: 24px 8px 18px 8px;
+    }
+}

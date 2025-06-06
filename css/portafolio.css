@@ -1,0 +1,108 @@
+.same-height-servicio {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 260px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 51, 102, 0.10);
+    border: 1px solid #e3e8ee;
+    background: #f9fbfc;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+.same-height-servicio:hover {
+    box-shadow: 0 8px 32px rgba(0, 51, 102, 0.18);
+    border: 1.5px solid #1565c0;
+    background: #f1f6fa;
+}
+.card-content.center {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.card-title {
+    color: #003366;
+    font-size: 1.3rem;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.material-icons.large.blue-text.text-darken-4 {
+    font-size: 3.5rem;
+    color: #1565c0 !important;
+    background: #e3e8ee;
+    border-radius: 50%;
+    padding: 18px;
+    margin-bottom: 10px;
+}
+#servicios-lista p {
+    color: #4a4a4a;
+    font-size: 1.05rem;
+    margin-bottom: 0;
+}
+/* Cajones de promociones estilo profesional azul */
+.same-height-promocion {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 220px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+    color: #fff;
+    box-shadow: 0 4px 24px rgba(26, 35, 126, 0.10);
+    border: none;
+    transition: box-shadow 0.3s, background 0.3s;
+}
+.same-height-promocion:hover {
+    box-shadow: 0 8px 32px rgba(26, 35, 126, 0.18);
+    background: linear-gradient(135deg, #0d133d 0%, #283593 100%);
+}
+.card-content.promocion-center {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.card-title.promocion-title {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.material-icons.large.promocion-icon {
+    font-size: 2.5rem;
+    color: #fff !important;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50%;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+#promociones-lista p {
+    color: #e3e8ee;
+    font-size: 1.08rem;
+    margin-bottom: 0;
+}
+.promocion-action {
+    background: #fff;
+    color: #1a237e !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 18px 0 18px 24px;
+    border-radius: 0 0 16px 16px;
+    text-transform: uppercase;
+    font-size: 1.05rem;
+    transition: background 0.2s, color 0.2s;
+    display: block;
+    text-decoration: none;
+}
+.promocion-action:hover {
+    background: #e3e8ee;
+    color: #0d133d !important;
+}
+@media (max-width: 992px) {
+    .same-height-servicio {
+        min-height: 220px;
+    }
+    .same-height-promocion {
+        min-height: 180px;
+    }
+}

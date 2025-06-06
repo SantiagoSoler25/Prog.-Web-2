@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguro de Hipoteca | Banco Top</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="../css/hipoteca.css">
+</head>
+<body>
+    <nav style="background: linear-gradient(90deg, #1a237e 0%, #3949ab 100%);">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo" style="font-style: italic; margin-left: 16px;">Andres</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down" style="margin-right: 24px;">
+                <li><a href="sass.html" style="font-style: italic;">Targetas</a></li>
+                <li><a href="../HTML/portafolio.html" style="font-style: italic;">Portafolio</a></li>
+                <li><a href="../HTML/cliente.html" style="font-style: italic;">transacciones</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="card card-hipoteca hoverable">
+        <div class="card-content center">
+            <i class="material-icons icono-hipoteca">home</i>
+            <span class="card-title" style="font-size:2.1rem; font-weight:700;">Seguro de Hipoteca</span>
+            <p style="font-size:1.15rem; margin-bottom:18px;">
+                Protege tu hogar y tu tranquilidad financiera.<br>
+                Nuestro seguro de hipoteca cubre el saldo deudor en caso de fallecimiento o invalidez, asegurando el patrimonio de tu familia.
+            </p>
+            <ul class="left-align" style="margin-top:18px; font-size:1.1rem;">
+                <li>✔ Cobertura por fallecimiento e invalidez total y permanente</li>
+                <li>✔ Protección del saldo pendiente de tu crédito hipotecario</li>
+                <li>✔ Proceso de contratación rápido y sencillo</li>
+                <li>✔ Asesoría personalizada</li>
+            </ul>
+            <form class="hipoteca-form" id="formHipoteca" style="margin-top:32px;">
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <input id="nombre" name="nombre" type="text" required>
+                        <label for="nombre">Nombre completo</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="email" name="email" type="email" required>
+                        <label for="email">Correo electrónico</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="monto" name="monto" type="number" min="10000" required>
+                        <label for="monto">Monto de la hipoteca ($)</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="plazo" name="plazo" type="number" min="1" required>
+                        <label for="plazo">Plazo (años)</label>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit">
+                    Cotizar Seguro
+                    <i class="material-icons right">send</i>
+                </button>
+                <div class="mensaje-exito" id="mensajeExito">
+                    ¡Tu solicitud fue enviada! Un asesor se comunicará contigo pronto.
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/hipoteca.js"></script>
+</body>
+</html>

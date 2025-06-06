@@ -1,0 +1,79 @@
+body, .bonificacion-bg {
+    background: linear-gradient(120deg, #e3f2fd 0%, #f8fafc 100%);
+    min-height: 100vh;
+}
+.card-bonificacion {
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(21,101,192,0.13);
+    background: #fff;
+    color: #263238;
+    padding-bottom: 18px;
+}
+.card-bonificacion .card-content {
+    padding: 48px 36px 32px 36px;
+}
+.icono-bonificacion {
+    font-size: 4rem;
+    color: #00c6ff;
+    background: #e3f2fd;
+    border-radius: 50%;
+    padding: 20px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 12px #00c6ff33;
+}
+.bonificacion-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1565c0;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+.bonificacion-desc {
+    font-size: 1.25rem;
+    margin-bottom: 22px;
+    color: #37474f;
+}
+.bonificacion-lista {
+    margin-top: 18px;
+    font-size: 1.12rem;
+    color: #263238;
+    margin-bottom: 28px;
+}
+.bonificacion-check {
+    color: #00c6ff;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.bonificacion-banner {
+    background: linear-gradient(90deg, #00c6ff 0%, #1565c0 100%);
+    color: #fff;
+    border-radius: 18px;
+    padding: 18px 24px;
+    margin-bottom: 32px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    box-shadow: 0 2px 12px #00c6ff33;
+}
+.bonificacion-destacado {
+    font-size: 1.15rem;
+    color: #1565c0;
+    font-weight: 600;
+    margin: 18px 0 10px 0;
+}
+.bonificacion-pasos {
+    margin: 0 auto 24px auto;
+    max-width: 600px;
+    text-align: left;
+}
+.bonificacion-pasos li {
+    margin-bottom: 10px;
+}
+@media (max-width: 600px) {
+    .card-bonificacion .card-content {
+        padding: 24px 8px 18px 8px;
+    }
+    .bonificacion-banner {
+        font-size: 1.05rem;
+        padding: 12px 10px;
+    }
+}

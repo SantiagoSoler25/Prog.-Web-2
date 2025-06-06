@@ -1,0 +1,49 @@
+.card-seguro-amplio {
+    max-width: 900px;
+    margin: 40px auto 0 auto;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(26,35,126,0.13);
+    background: linear-gradient(120deg, #1a237e 0%, #3949ab 100%);
+    color: #fff;
+}
+.card-seguro-amplio .card-content {
+    padding: 48px 48px 32px 48px;
+}
+.card-seguro-amplio .card-title {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.icono-seguro {
+    font-size: 3.5rem;
+    color: #fff;
+    background: rgba(255,255,255,0.10);
+    border-radius: 50%;
+    padding: 18px;
+    margin-bottom: 18px;
+}
+.seguro-desc {
+    font-size:1.25rem;
+    margin-bottom: 18px;
+}
+.seguro-lista {
+    margin-top: 18px;
+    margin-bottom: 0;
+    font-size: 1.15rem;
+}
+.seguro-lista li {
+    margin-bottom: 8px;
+}
+.seguro-contacto {
+    margin-top:22px;
+    font-size:1.1rem;
+}
+@media (max-width: 600px) {
+    .card-seguro-amplio .card-content {
+        padding: 24px 12px 18px 12px;
+    }
+    .card-seguro-amplio .card-title {
+        font-size: 1.4rem;
+    }
+}

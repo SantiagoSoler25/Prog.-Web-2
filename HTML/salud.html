@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salud Financiera | Banco Top</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="../css/salud.css">
+</head>
+<body>
+    <nav style="background: linear-gradient(90deg, #1a237e 0%, #3949ab 100%);">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo" style="font-style: italic; margin-left: 16px;">Andres</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down" style="margin-right: 24px;">
+                <li><a href="sass.html" style="font-style: italic;"></a></li>
+                <li><a href="../HTML/portafolio.html" style="font-style: italic;">Portafolio</a></li>
+                <li><a href="../HTML/cliente.html" style="font-style: italic;">transacciones</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="salud-bg">
+        <div class="container">
+            <div class="row" style="margin-top: 48px;">
+                <div class="col s12 m10 l8 offset-m1 offset-l2">
+                    <div class="card card-salud hoverable">
+                        <div class="card-content center">
+                            <i class="material-icons icono-salud pulse">favorite</i>
+                            <span class="card-title salud-title">Salud Financiera para Beneficiarios</span>
+                            <p class="salud-desc">
+                                Descubre herramientas y asesoría para mantener tu bienestar financiero.<br>
+                                Banco Top te acompaña en cada etapa para que tomes las mejores decisiones con tus beneficios.
+                            </p>
+                            <ul class="left-align salud-lista">
+                                <li><i class="material-icons tiny salud-check">check_circle</i> Talleres gratuitos de educación financiera</li>
+                                <li><i class="material-icons tiny salud-check">check_circle</i> Asesoría personalizada para beneficiarios</li>
+                                <li><i class="material-icons tiny salud-check">check_circle</i> Herramientas para el control de gastos y ahorro</li>
+                                <li><i class="material-icons tiny salud-check">check_circle</i> Alertas y reportes de salud financiera</li>
+                            </ul>
+                            <form class="salud-form" id="formSalud" autocomplete="off">
+                                <div class="row">
+                                    <div class="input-field col s12 m6">
+                                        <input id="nombre" name="nombre" type="text" required>
+                                        <label for="nombre">Nombre completo</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="email" name="email" type="email" required>
+                                        <label for="email">Correo electrónico</label>
+                                    </div>
+                                </div>
+                                <button class="btn-large waves-effect waves-light salud-btn" type="submit">
+                                    Solicitar Asesoría
+                                    <i class="material-icons right">send</i>
+                                </button>
+                                <div class="mensaje-exito" id="mensajeExito">
+                                    <i class="material-icons left">check_circle</i>
+                                    ¡Solicitud enviada! Un asesor se comunicará contigo pronto.
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <footer class="page-footer" style="background: #003366; padding-top: 0;">
+    <div class="container">
+      <div class="row" style="margin-bottom: 0;">
+        <div class="col s12 m6">
+          <h5 class="white-text" style="font-weight:700; letter-spacing:1px; margin-top: 32px;">Banco Top</h5>
+          <p class="grey-text text-lighten-3" style="font-size:1.1rem;">
+            Tu seguridad y confianza, nuestra prioridad.<br>
+            Todos los derechos reservados © 2025
+          </p>
+        </div>
+        <div class="col s12 m4 offset-m2">
+          <h5 class="white-text" style="margin-top: 32px;">Enlaces útiles</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#">Ayuda</a></li>
+            <li><a class="grey-text text-lighten-3" href="#"></a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Términos y condiciones</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Privacidad</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row" style="margin-bottom: 0;">
+        <div class="col s12 center-align">
+          <hr style="border-color: #1a237e; margin: 10px 0 16px 0;">
+          <span class="white-text" style="font-size: 1rem;">© 2025 Banco Prestador BSS</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/salud.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body {
+    background: #f4f6fb;
+}
+.card-hipoteca {
+    max-width: 700px;
+    margin: 40px auto;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(26,35,126,0.13);
+    background: linear-gradient(120deg, #1a237e 0%, #3949ab 100%);
+    color: #fff;
+}
+.card-hipoteca .card-content {
+    padding: 40px 32px 32px 32px;
+}
+.icono-hipoteca {
+    font-size: 3.5rem;
+    color: #fff;
+    background: rgba(255,255,255,0.10);
+    border-radius: 50%;
+    padding: 18px;
+    margin-bottom: 18px;
+}
+.hipoteca-form label {
+    color: #fff !important;
+}
+.hipoteca-form input[type="text"], 
+.hipoteca-form input[type="number"], 
+.hipoteca-form input[type="email"] {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.hipoteca-form .input-field input:focus {
+    border-bottom: 1.5px solid #ffeb3b;
+    box-shadow: 0 1px 0 0 #ffeb3b;
+}
+.hipoteca-form .btn {
+    background: #ffeb3b;
+    color: #1a237e;
+    font-weight: bold;
+}
+.hipoteca-form .btn:hover {
+    background: #fff176;
+}
+.mensaje-exito {
+    color: #ffeb3b;
+    font-weight: bold;
+    margin-top: 18px;
+    display: none;
+}
