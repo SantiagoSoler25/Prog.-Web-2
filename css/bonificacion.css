@@ -1,12 +1,55 @@
+:root {
+    --primary-color: linear-gradient(90deg, #1a237e 0%, #3949ab 100%);
+    --secondary-color: linear-gradient(90deg, #00c6ff 0%, #1565c0 100%);
+    --thirdary-color: #003366;
+    --fourthary-color: #00c6ff;
+    --background-color: #f8fafc;
+    --text-color: #263238;
+    --secondary-text-color: #ffffff;
+    --thirdary-text-color: #1565c0;
+}
+@media (max-width: 600px) {
+    .card-bonificacion .card-content {
+        padding: 24px 8px 18px 8px;
+    }
+    .bonificacion-banner {
+        font-size: 1.05rem;
+        padding: 12px 10px;
+    }
+}
 body, .bonificacion-bg {
-    background: linear-gradient(120deg, #e3f2fd 0%, #f8fafc 100%);
     min-height: 100vh;
+}
+h5 {
+    font-weight:700;
+    letter-spacing:1px; 
+    margin-top: 32px;
+}
+.header_nav {
+    background: var(--primary-color);
+    color: var(--secondary-text-color);
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_nav .nav-left {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.header_nav .nav-right a {
+    color: var(--secondary-text-color);
+    margin-left: 32px;
+    font-size: 1.1rem;
+    font-style: italic;
+    text-decoration: none;
 }
 .card-bonificacion {
     border-radius: 22px;
     box-shadow: 0 8px 32px rgba(21,101,192,0.13);
-    background: #fff;
-    color: #263238;
+    background: var(--background-color);
+    color: var(--text-color);
     padding-bottom: 18px;
 }
 .card-bonificacion .card-content {
@@ -14,8 +57,8 @@ body, .bonificacion-bg {
 }
 .icono-bonificacion {
     font-size: 4rem;
-    color: #00c6ff;
-    background: #e3f2fd;
+    color: var(--thirdary-color);
+    background: var(--background-color);
     border-radius: 50%;
     padding: 20px;
     margin-bottom: 18px;
@@ -24,29 +67,29 @@ body, .bonificacion-bg {
 .bonificacion-title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #1565c0;
+    color: var(--thirdary-text-color);
     margin-bottom: 12px;
     letter-spacing: 1px;
 }
 .bonificacion-desc {
     font-size: 1.25rem;
     margin-bottom: 22px;
-    color: #37474f;
+    color: var(--text-color);
 }
 .bonificacion-lista {
     margin-top: 18px;
     font-size: 1.12rem;
-    color: #263238;
+    color: var(--text-color);
     margin-bottom: 28px;
 }
 .bonificacion-check {
-    color: #00c6ff;
+    color: var(--thirdary-color);
     vertical-align: middle;
     margin-right: 6px;
 }
 .bonificacion-banner {
-    background: linear-gradient(90deg, #00c6ff 0%, #1565c0 100%);
-    color: #fff;
+    background: var(--secondary-color);
+    color: var(--secondary-text-color);
     border-radius: 18px;
     padding: 18px 24px;
     margin-bottom: 32px;
@@ -56,7 +99,7 @@ body, .bonificacion-bg {
 }
 .bonificacion-destacado {
     font-size: 1.15rem;
-    color: #1565c0;
+    color: var(--thirdary-text-color);
     font-weight: 600;
     margin: 18px 0 10px 0;
 }
@@ -68,12 +111,10 @@ body, .bonificacion-bg {
 .bonificacion-pasos li {
     margin-bottom: 10px;
 }
-@media (max-width: 600px) {
-    .card-bonificacion .card-content {
-        padding: 24px 8px 18px 8px;
-    }
-    .bonificacion-banner {
-        font-size: 1.05rem;
-        padding: 12px 10px;
-    }
+.page-footer {
+    background: var(--fourthary-color);
+    color: var(--secondary-text-color);
+    padding: 24px 32px;
+    font-size: 1rem;
+    font-weight: 500;
 }
