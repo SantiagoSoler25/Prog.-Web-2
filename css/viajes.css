@@ -1,4 +1,3 @@
-/* filepath: c:\Users\braya\repositorios\Proyecto_Banco\css\viajes.css */
 .row.viajes-row {
     margin-left: 0;
     margin-right: 0;
@@ -7,7 +6,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin: 0 12px 32px 12px; /* Espaciado horizontal y vertical */
+    margin: 0 12px 32px 12px; 
 }
 .viaje-card .card-image {
     height: 220px;
@@ -20,11 +19,11 @@
 }
 .viaje-card .card-content {
     flex: 1 1 auto;
-    text-align: center; /* Centra el texto del contenido */
+    text-align: center; 
 }
 .viaje-card .card-action {
     margin-top: auto;
-    text-align: center; /* Centra el texto del card-action */
+    text-align: center; 
 }
 @media (min-width: 993px) {
     .viajes-row {
@@ -32,17 +31,16 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: stretch;
-        gap: 48px; /* Espaciado grande entre las columnas */
+        gap: 48px;
     }
     .viajes-row > .col {
         display: flex;
         flex: 1 1 0;
         padding: 0;
-        /* Elimina el margin lateral de las cards para que el gap funcione bien */
     }
     .viaje-card {
         width: 100%;
-        margin: 0 0 32px 0; /* Solo margen inferior */
+        margin: 0 0 32px 0; 
     }
 }
 @media (max-width: 992px) {

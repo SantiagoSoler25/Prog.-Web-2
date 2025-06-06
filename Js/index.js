@@ -12,7 +12,6 @@
                 return;
             }
 
-            // Validación simple
             if (!/^[0-9]{6,12}$/.test(cedula)) {
                 M.toast({html: 'Cédula inválida.'});
                 return;
