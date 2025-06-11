@@ -1,13 +1,56 @@
+:root {
+    --primary-color: linear-gradient(90deg, #1a237e 0%, #3949ab 100%);
+    --secondary-color: linear-gradient(90deg, #00c6ff 0%, #1565c0 100%);
+    --thirdary-color: #003366;
+    --fourthary-color: #00c6ff;
+    --background-color: #f8fafc;
+    --text-color: #263238;
+    --secondary-text-color: #ffffff;
+    --thirdary-text-color: #1565c0;
+}
+@media (max-width: 600px) {
+  h2.center-align {
+    font-size: 2rem;
+  }
+  .card-title {
+    font-size: 1.1rem;
+  }
+}
 body {
-  background: linear-gradient(135deg, #e3eafc 0%, #c1d3fe 100%);
-  min-height: 100vh;
+    min-height: 100vh;
+}
+h5 {
+    font-weight:700;
+    letter-spacing:1px; 
+    margin-top: 32px;
+}
+.header_nav {
+    background: var(--primary-color);
+    color: var(--secondary-text-color);
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_nav .nav-left {
+    font-size: 2rem;
+    font-style: italic;
 }
 
-.nav-wrapper {
-  background: linear-gradient(120deg, #1a237e 60%, #3949ab 100%) !important;
+.header_nav .nav-right a {
+    color: var(--secondary-text-color);
+    margin-left: 32px;
+    font-size: 1.1rem;
+    font-style: italic;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 4px;
+    transition: var(--thirdary-color) 0.2s;
 }
-.nav-wrapper, .nav-wrapper a, .brand-logo, #nav-mobile li a {
-  font-style: italic;
+.header_nav .nav-right a:hover,
+.header_nav .nav-right a.active {
+    background: var(--thirdary-color); 
+    color: var(--secondary-text-color);
 }
 .brand-logo {
   font-weight: bold;
@@ -39,17 +82,17 @@ h2.center-align {
 .card.teal.darken-1,
 .card.green.darken-1,
 .card.red.darken-1 {
-  background: linear-gradient(120deg, #1a237e 60%, #3949ab 100%);
+  background: var(--primary-color) !important;
 }
 .card.red.darken-1 {
-  background: linear-gradient(120deg, #102542 60%, #283e6d 100%);
+  background: var(--primary-color) !important;
 }
 .card-content p {
   font-size: 1.1rem;
   margin-top: 10px;
 }
 .card-action {
-  background: #fff !important;
+  background: var(--background-color) !important;
   border-top: 1px solid #e0e7ef;
 }
 .card-action a {
@@ -69,29 +112,9 @@ h2.center-align {
   justify-content: space-between;
 }
 .page-footer {
-  background: linear-gradient(120deg, #1a237e 60%, #3949ab 100%) !important;
-}
-.page-footer h5,
-.page-footer span,
-.page-footer a,
-.page-footer p {
-  color: #fff !important;
-}
-.page-footer ul li a {
-  color: #b0c4de !important;
-}
-.page-footer ul li a:hover {
-  color: #fff !important;
-  text-decoration: underline;
-}
-hr {
-  border-color: #1a237e;
-}
-@media (max-width: 600px) {
-  h2.center-align {
-    font-size: 2rem;
-  }
-  .card-title {
-    font-size: 1.1rem;
-  }
+    background: var(--secondary-color);
+    color: var(--secondary-text-color);
+    padding: 24px 32px;
+    font-size: 1rem;
+    font-weight: 500;
 }
