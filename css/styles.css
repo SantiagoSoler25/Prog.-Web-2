@@ -45,8 +45,14 @@ h5 {
 main {
     flex: 1 0 auto;
 }
-.btn, .btn-large, .btn-small{
-    background-color: var(--primary-color);
+.btn, .btn-large, .btn-small {
+    background: var(--primary-color);
+}
+.waves-effect:hover {
+    background-color: var(--fourthary-color) !important;
+    color: var(--secondary-text-color) !important;
+    transform: scale(1.12);
+    transition: transform 0.2s;
 }
 .page-footer {
     background: var(--fourthary-color);
