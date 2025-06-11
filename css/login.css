@@ -87,11 +87,27 @@ form {
     color: var(--thirdary-color) !important;
 }
 .btn, .btn-large, .btn-small {
-    background-color: var(--thirdary-color) !important;
-    color: var(--secondary-text-color) !important;
-    width: 80%;
-    margin: 35px auto 0 auto;
-    display: block;
+    background: var(--primary-color);
+    color: var(--secondary-text-color);
+    font-weight: bold;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition: box-shadow 0.2s;
+    box-shadow: 0 2px 12px #00c6ff33;
+}
+.login{
+    color: var(--secondary-text-color);
+}
+.btn:hover, .btn-large:hover, .btn-small:hover {
+    background: var(--fourthary-color);
+    color: var(--secondary-text-color);
+    box-shadow: 0 4px 24px #28359333;
+}
+hr{
+    margin: 40px 0;
+    border: none;
+    height: 1px;
+    background-color: var(--thirdary-color);
 }
 .waves-effect:hover {
     background-color: var(--fourthary-color) !important;
