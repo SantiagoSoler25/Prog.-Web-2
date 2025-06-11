@@ -1,3 +1,56 @@
+:root {
+    --primary-color: linear-gradient(90deg, #1a237e 0%, #3949ab 100%);
+    --secondary-color: linear-gradient(90deg, #00c6ff 0%, #1565c0 100%);
+    --thirdary-color: #003366;
+    --fourthary-color: #00c6ff;
+    --background-color: #f8fafc;
+    --text-color: #263238;
+    --secondary-text-color: #ffffff;
+    --thirdary-text-color: #1565c0;
+}
+@media (max-width: 992px) {
+    .same-height-servicio {
+        min-height: 220px;
+    }
+    .same-height-promocion {
+        min-height: 180px;
+    }
+}
+.body, .portafolio-bg {
+    min-height: 100vh;
+}
+h5 {
+    font-weight:700;
+    letter-spacing:1px; 
+    margin-top: 32px;
+}
+.header_nav {
+    background: var(--primary-color);
+    color: var(--secondary-text-color);
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_nav .nav-left {
+    font-size: 2rem;
+    font-style: italic;
+}
+.header_nav .nav-right a {
+    color: var(--secondary-text-color);
+    margin-left: 32px;
+    font-size: 1.1rem;
+    font-style: italic;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 4px;
+    transition: var(--thirdary-color) 0.2s;
+}
+.header_nav .nav-right a:hover,
+.header_nav .nav-right a.active {
+    background: var(--thirdary-color); 
+    color: var(--secondary-text-color);
+}
 .same-height-servicio {
     display: flex;
     flex-direction: column;
@@ -6,20 +59,20 @@
     border-radius: 16px;
     box-shadow: 0 4px 24px rgba(0, 51, 102, 0.10);
     border: 1px solid #e3e8ee;
-    background: #f9fbfc;
+    background: var(--background-color);
     transition: box-shadow 0.3s, border 0.3s;
 }
 .same-height-servicio:hover {
     box-shadow: 0 8px 32px rgba(0, 51, 102, 0.18);
-    border: 1.5px solid #1565c0;
-    background: #f1f6fa;
+    border: 1.5px solid var(--thirdary-text-color);
+    background: var(--background-color);
 }
 .card-content.center {
     padding-top: 32px;
     padding-bottom: 32px;
 }
 .card-title {
-    color: #003366;
+    color: var(--thirdary-color);
     font-size: 1.3rem;
     margin-top: 18px;
     margin-bottom: 10px;
@@ -28,14 +81,14 @@
 }
 .material-icons.large.blue-text.text-darken-4 {
     font-size: 3.5rem;
-    color: #1565c0 !important;
+    color: var(--thirdary-text-color) !important;
     background: #e3e8ee;
     border-radius: 50%;
     padding: 18px;
     margin-bottom: 10px;
 }
 #servicios-lista p {
-    color: #4a4a4a;
+    color: var(--text-color);
     font-size: 1.05rem;
     margin-bottom: 0;
 }
@@ -45,8 +98,8 @@
     height: 100%;
     min-height: 220px;
     border-radius: 16px;
-    background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--secondary-text-color);
     box-shadow: 0 4px 24px rgba(26, 35, 126, 0.10);
     border: none;
     transition: box-shadow 0.3s, background 0.3s;
@@ -60,7 +113,7 @@
     padding-bottom: 32px;
 }
 .card-title.promocion-title {
-    color: #fff;
+    color: var(--secondary-text-color);
     font-size: 1.3rem;
     margin-top: 18px;
     margin-bottom: 10px;
@@ -69,7 +122,7 @@
 }
 .material-icons.large.promocion-icon {
     font-size: 2.5rem;
-    color: #fff !important;
+    color: var(--secondary-text-color) !important;
     background: rgba(255,255,255,0.08);
     border-radius: 50%;
     padding: 12px;
@@ -81,7 +134,7 @@
     margin-bottom: 0;
 }
 .promocion-action {
-    background: #fff;
+    background: var(--secondary-text-color);
     color: #1a237e !important;
     font-weight: 700;
     letter-spacing: 1px;
@@ -97,11 +150,10 @@
     background: #e3e8ee;
     color: #0d133d !important;
 }
-@media (max-width: 992px) {
-    .same-height-servicio {
-        min-height: 220px;
-    }
-    .same-height-promocion {
-        min-height: 180px;
-    }
+.page-footer {
+    background: var(--secondary-color);
+    color: var(--secondary-text-color);
+    padding: 24px 32px;
+    font-size: 1rem;
+    font-weight: 500;
 }

@@ -1,23 +1,83 @@
+:root {
+    --primary-color: linear-gradient(90deg, #1a237e 0%, #3949ab 100%);
+    --secondary-color: linear-gradient(90deg, #00c6ff 0%, #1565c0 100%);
+    --thirdary-color: #003366;
+    --fourthary-color: #00c6ff;
+    --background-color: #f8fafc;
+    --text-color: #263238;
+    --secondary-text-color: #ffffff;
+    --thirdary-text-color: #1565c0;
+}
+@media (max-width: 600px) {
+    .card-seguro-amplio .card-content {
+        padding: 24px 12px 18px 12px;
+    }
+    .card-seguro-amplio .card-title {
+        font-size: 1.4rem;
+    }
+}body {
+    min-height: 100vh;
+}
+h5 {
+    font-weight:700;
+    letter-spacing:1px; 
+    margin-top: 32px;
+}
+.header_nav {
+    background: var(--primary-color);
+    color: var(--secondary-text-color);
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_nav .nav-left {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.header_nav .nav-right a {
+    color: var(--secondary-text-color);
+    margin-left: 32px;
+    font-size: 1.1rem;
+    font-style: italic;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 4px;
+    transition: var(--thirdary-color) 0.2s;
+}
+.header_nav .nav-right a:hover,
+.header_nav .nav-right a.active {
+    background: var(--thirdary-color); 
+    color: var(--secondary-text-color);
+}
+.card-bonificacion {
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(21,101,192,0.13);
+    background: var(--background-color);
+    color: var(--text-color);
+    padding-bottom: 18px;
+}
 .card-seguro-amplio {
     max-width: 900px;
     margin: 40px auto 0 auto;
     border-radius: 18px;
     box-shadow: 0 8px 32px rgba(26,35,126,0.13);
-    background: linear-gradient(120deg, #1a237e 0%, #3949ab 100%);
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--secondary-text-color);
 }
 .card-seguro-amplio .card-content {
     padding: 48px 48px 32px 48px;
 }
 .card-seguro-amplio .card-title {
-    color: #fff;
+    color: var(--secondary-text-color);
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 18px;
 }
 .icono-seguro {
     font-size: 3.5rem;
-    color: #fff;
+    color: var(--secondary-text-color);
     background: rgba(255,255,255,0.10);
     border-radius: 50%;
     padding: 18px;
@@ -39,11 +99,10 @@
     margin-top:22px;
     font-size:1.1rem;
 }
-@media (max-width: 600px) {
-    .card-seguro-amplio .card-content {
-        padding: 24px 12px 18px 12px;
-    }
-    .card-seguro-amplio .card-title {
-        font-size: 1.4rem;
-    }
+.page-footer {
+    background: var(--secondary-color);
+    color: var(--secondary-text-color);
+    padding: 24px 32px;
+    font-size: 1rem;
+    font-weight: 500;
 }

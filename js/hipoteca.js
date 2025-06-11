@@ -9,3 +9,6 @@ $(document).ready(function(){
         }, 3500);
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    M.updateTextFields();
+});

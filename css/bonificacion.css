@@ -44,6 +44,14 @@ h5 {
     font-size: 1.1rem;
     font-style: italic;
     text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 4px;
+    transition: var(--thirdary-color) 0.2s;
+}
+.header_nav .nav-right a:hover,
+.header_nav .nav-right a.active {
+    background: var(--thirdary-color); 
+    color: var(--secondary-text-color);
 }
 .card-bonificacion {
     border-radius: 22px;
@@ -112,7 +120,7 @@ h5 {
     margin-bottom: 10px;
 }
 .page-footer {
-    background: var(--fourthary-color);
+    background: var(--secondary-color);
     color: var(--secondary-text-color);
     padding: 24px 32px;
     font-size: 1rem;
