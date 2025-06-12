@@ -21,16 +21,16 @@
       <div class="card">
         <div class="card-content">
           <span class="card-title center-align">Iniciar Sesión</span>
-          <form>
+          <form id="loginForm" onsubmit="guardarDatosLogin(); return false;">
               <div class="input-field">
-                <input id="usuario" type="text" required>
+                <input id="usuario" type="text" required onblur="validarUsuario()">
                 <label for="usuario">Usuario o Correo</label>
               </div>
               <div class="input-field">
-                <input id="clave" type="password" required>
+                <input id="clave" type="password" required onblur="validarClave()">
                 <label for="clave">Contraseña</label>
               </div>
-              <button class="btn-large waves-effect waves-light" type="submit" style="width:100%;margin-top:24px;">
+              <button class="btn-large waves-effect waves-light" type="submit" style="width:100%;margin-top:24px;" onclick="validarFormulario(), limpiarFormulario()">
                     <a class="login" href="../HTML/transacciones.html">Ingresar</a>
               </button>
           </form><hr>
@@ -71,5 +71,6 @@
     </footer>
     <script src="../Js/jquery-3.7.1.min.js"></script>
     <script src="../materialize/js/materialize.min.js"></script>
+    <script src="../Js/eventos.js"></script>
 </body>
 </html>
