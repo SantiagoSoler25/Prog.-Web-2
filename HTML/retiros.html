@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Retiros - Entidad Bancaria</title>
+    <link href="../materialize/css/materialize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/retiros.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body class="grey lighten-4">
+    <nav class="header_nav">
+        <div class="nav-left">
+            Entidad Bancaria
+        </div>
+        <div class="nav-right">
+            <a href="../index.html">Inicio</a>
+            <a href="./transacciones.html">Transacciones</a>
+            <a href="./portafolio.html">Portafolio</a>
+            <a href="./login.html">Login</a>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="row" style="margin-top: 48px;">
+                <div class="col s12 m8 l6 offset-m2 offset-l3">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title center-align" style="color: var(--thirdary-color);">Realizar Retiro</span>
+                            <form id="retiroForm" autocomplete="off">
+                                <div class="input-field">
+                                    <input id="cuenta" name="cuenta" type="text" class="validate" required>
+                                    <label for="cuenta">Número de Cuenta</label>
+                                </div>
+                                <div class="input-field">
+                                    <input id="monto" name="monto" type="number" min="1" class="validate" required>
+                                    <label for="monto">Monto a Retirar</label>
+                                </div>
+                                <div class="input-field">
+                                    <input id="concepto" name="concepto" type="text" class="validate">
+                                    <label for="concepto">Concepto (opcional)</label>
+                                </div>
+                                <button class="btn-large waves-effect waves-light" type="submit" style="width:100%;margin-top:24px;">
+                                    RETIRAR
+                                </button>
+                                <div class="center-align" style="margin-top: 24px;">
+                                    <a href="../index.html" style="color: var(--thirdary-color);">Volver al inicio</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../Js/jquery-3.7.1.min.js"></script>
+    <script src="../materialize/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        M.updateTextFields();
+      });
+    </script>
+</body>
+</html>
