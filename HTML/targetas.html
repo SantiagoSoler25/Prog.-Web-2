@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apertura de Cuenta - Banco Top</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../materialize/css/materialize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/cuentas.css">
+</head>
+<body class="grey lighten-4">
+    <nav class="blue darken-4">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">Banco Top</a>
+        </div>
+    </nav>
+    <main class="container" style="margin-top: 40px;">
+        <div class="row">
+            <form id="form-cuenta" class="col s12 m8 offset-m2 white z-depth-2" style="padding: 32px; border-radius: 12px;">
+                <h4 class="center-align blue-text text-darken-4">Apertura de Cuenta</h4>
+                <div class="input-field">
+                    <select id="tipo-cuenta" required>
+                        <option value="" disabled selected>Selecciona el tipo de cuenta</option>
+                        <option value="ahorros">Cuenta de Ahorros</option>
+                        <option value="corriente">Cuenta Corriente</option>
+                        <option value="credito">Tarjeta de Crédito</option>
+                    </select>
+                    <label for="tipo-cuenta">Tipo de cuenta</label>
+                </div>
+                <div class="input-field">
+                    <input id="cedula" type="text" required>
+                    <label for="cedula">Cédula</label>
+                </div>
+                <div class="input-field">
+                    <input id="nombre" type="text" required>
+                    <label for="nombre">Nombre completo</label>
+                </div>
+                <div class="input-field">
+                    <input id="correo" type="email" required>
+                    <label for="correo">Correo electrónico</label>
+                </div>
+                <div class="input-field">
+                    <input id="anios-trabajando" type="number" min="0" required>
+                    <label for="anios-trabajando">Años trabajando</label>
+                </div>
+                <div class="input-field">
+                    <input id="empresa" type="text" required>
+                    <label for="empresa">Empresa</label>
+                </div>
+                <div class="input-field">
+                    <input id="ocupacion" type="text" required>
+                    <label for="ocupacion">Ocupación / A qué se dedica laboralmente</label>
+                </div>
+                <div class="input-field">
+                    <input id="ingresos" type="number" min="0" required>
+                    <label for="ingresos">Ingresos mensuales</label>
+                </div>
+                <div class="center-align" style="margin-top: 32px;">
+                    <button id="btn-cuenta" class="btn-large blue darken-4 waves-effect waves-light" type="submit">
+                        Crear Cuenta
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div id="mensaje-exito" class="card-panel green lighten-4 green-text text-darken-4 center-align" style="display:none;">
+            ¡Cuenta creada exitosamente!
+        </div>
+    </main>
+    <script src="../Js/jquery-3.7.1.min.js"></script>
+    <script src="../materialize/js/materialize.min.js"></script>
+    <script src="../Js/cuentas.js"></script>
+</body>
+</html>

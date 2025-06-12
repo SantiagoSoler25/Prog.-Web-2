@@ -1,0 +1,32 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #f5f6fa;
+}
+
+main.container {
+    flex: 1 0 auto;
+}
+
+form h4 {
+    margin-bottom: 32px;
+    font-weight: 700;
+}
+
+.input-field label {
+    color: #1a237e;
+}
+
+.btn-large {
+    border-radius: 24px;
+    font-size: 1.2rem;
+    padding: 0 2.5rem;
+}
+
+#mensaje-exito {
+    max-width: 400px;
+    margin: 32px auto 0 auto;
+    font-size: 1.3rem;
+    border-radius: 12px;
+}
