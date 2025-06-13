@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transferir Dinero</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../materialize/css/materialize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/envios.css">
+</head>
+<body class="grey lighten-4">
+    <nav class="header_nav">
+        <div class="nav-left">
+            Andres
+        </div>
+        <div class="nav-right">
+            <a href="./tarjetas.html">Tarjetas</a>
+            <a href="./portafolio.html">Portafolio</a>
+            <a href="./transacciones.html">Transacciones</a>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="row">
+            <form id="form-envio" class="col s12 m8 offset-m2 white z-depth-2" style="padding: 48px 32px 32px 32px; border-radius: 16px; margin-top: 48px;">
+                <h4 class="center-align blue-text text-darken-4">Transferir Dinero</h4>
+                <div class="input-field">
+                    <input id="nombre-envio" type="text" required>
+                    <label for="nombre-envio">Nombre del destinatario</label>
+                </div>
+                <div class="input-field">
+                    <input id="cedula-envio" type="text" required>
+                    <label for="cedula-envio">Cédula del destinatario</label>
+                </div>
+                <div class="input-field">
+                    <input id="monto-envio" type="number" min="1" required>
+                    <label for="monto-envio">Monto a transferir</label>
+                </div>
+                <div class="center-align" style="margin-top: 32px;">
+                    <button class="btn-large blue darken-4 waves-effect waves-light" type="submit">
+                        Transferir
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row" style="margin-bottom: 0;">
+                <div class="col s12 m6">
+                    <h5 class="white-text">Banco Top</h5>
+                    <p class="grey-text text-lighten-3" style="font-size:1.1rem;">
+                        Tu seguridad y confianza, nuestra prioridad.<br>
+                        Todos los derechos reservados © 2025
+                    </p>
+                </div>
+                <div class="col s12 m4 offset-m2">
+                    <h5 class="white-text">Enlaces útiles</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#">Ayuda</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Términos y condiciones</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#">Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 0;">
+                <div class="col s12 center-align">
+                    <hr style="border-color: #1a237e; margin: 10px 0 16px 0;">
+                    <span class="white-text" style="font-size: 1rem;">© 2025 Banco Prestador BSS</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../materialize/js/materialize.min.js"></script>
+    <script src="../Js/envios.js"></script>
+  
+</body>
+</html>

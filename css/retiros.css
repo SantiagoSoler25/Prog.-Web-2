@@ -1,0 +1,129 @@
+:root {
+    --primary-color: linear-gradient(90deg, #1a237e 0%, #3949ab 100%);
+    --secondary-color: linear-gradient(90deg, #00c6ff 0%, #1565c0 100%);
+    --thirdary-color: #003366;
+    --fourthary-color: #00c6ff;
+    --background-color: #f8fafc;
+    --text-color: #263238;
+    --secondary-text-color: #ffffff;
+    --thirdary-text-color: #1565c0;
+}
+body {
+    min-height: 100vh;
+    background: #f5f6fa;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+h5 {
+    font-weight:700;
+    letter-spacing:1px; 
+    margin-top: 32px;
+}
+.header_nav {
+    background: var(--primary-color);
+    color: var(--secondary-text-color);
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_nav .nav-left {
+    font-size: 2rem;
+    font-style: italic;
+}
+.header_nav .nav-right a {
+    color: var(--secondary-text-color);
+    margin-left: 32px;
+    font-size: 1.1rem;
+    font-style: italic;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 4px;
+    transition: var(--thirdary-color) 0.2s;
+}
+.header_nav .nav-right a:hover,
+.header_nav .nav-right a.active {
+    background: var(--thirdary-color); 
+    color: var(--secondary-text-color);
+}
+
+main.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: calc(100vh - 160px); /* Ajusta el alto para dejar espacio arriba y abajo */
+    padding-top: 64px;    /* Espacio entre nav y cuadro de retiros */
+    padding-bottom: 64px; /* Mismo espacio abajo para el footer */
+    width: 100vw;
+}
+
+form#form-retiro {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(26,35,126,0.10);
+    margin: 0 auto;
+    padding: 48px 32px 32px 32px;
+    max-width: 1000px;    /* Mucho más ancho */
+    min-width: 500px;     /* Opcional: ancho mínimo */
+    width: 90vw;          /* Ocupa el 90% del ancho de la ventana */
+}
+
+form#form-retiro h4 {
+    margin-bottom: 28px;
+    font-weight: 700;
+    color: #1565c0;
+    font-size: 2rem;
+}
+
+.input-field label {
+    color: #1565c0 !important;
+    font-weight: 500;
+}
+
+.input-field input[type="text"],
+.input-field input[type="number"] {
+    border-bottom: 1.5px solid #90caf9 !important;
+    color: #1a237e;
+    font-size: 1.08rem;
+    background: #f5fafd;
+    border-radius: 4px 4px 0 0;
+    padding-left: 8px;
+}
+
+.input-field input:focus {
+    border-bottom: 2px solid #1565c0 !important;
+    background: #e3f2fd;
+}
+
+.btn-large {
+    border-radius: 20px;
+    font-size: 1.15rem;
+    padding: 0 2.5rem;
+    background: #1565c0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px #1565c033;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.btn-large:hover {
+    background: #1976d2;
+    box-shadow: 0 4px 18px #1565c044;
+}
+
+@media (max-width: 600px) {
+    form#form-retiro {
+        padding: 16px 4px 12px 4px;
+        max-width: 100%;
+    }
+    .btn-large {
+        width: 100%;
+    }
+}
+.page-footer {
+    background: var(--secondary-color);
+    color: var(--secondary-text-color);
+    padding: 24px 32px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0; /* Sin margen extra */
+}
